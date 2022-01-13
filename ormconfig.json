@@ -1,8 +1,16 @@
 {
-  "type": "sqlite",
-  "database": "src/database/database.sqlite",
-  "migrations": ["src/database/migrations/*.ts"],
-  "entities": ["src/entities/*.ts"],
+  "type": "mysql",
+  "host": "node2.prosperis.com.br",
+  "port": 3306,
+  "username": "root",
+  "password": "lucas_teste",
+  "database": "mi",
+  "migrations": [
+    "src/database/migrations/*.ts"
+  ],
+  "entities": [
+    "src/entities/*.ts"
+  ],
   "cli": {
     "migrationsDir": "src/database/migrations",
     "entitiesDir": "src/entities"
